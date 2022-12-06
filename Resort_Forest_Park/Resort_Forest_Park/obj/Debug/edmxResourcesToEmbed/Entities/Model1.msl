@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ForestModelContainer" CdmEntityContainer="ForestEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="ForestModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Thecode" ColumnName="Thecode" />
+          <ScalarProperty Name="PassportData" ColumnName="PassportData" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="e_mail" ColumnName="e_mail" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ForestModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="id_employees" ColumnName="id_employees" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="id_jobtitle" ColumnName="id_jobtitle" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTitle">
+      <EntityTypeMapping TypeName="ForestModel.JobTitle">
+        <MappingFragment StoreEntitySet="JobTitle">
+          <ScalarProperty Name="id_jobTitle" ColumnName="id_jobTitle" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Loginhistory">
+      <EntityTypeMapping TypeName="ForestModel.Loginhistory">
+        <MappingFragment StoreEntitySet="Loginhistory">
+          <ScalarProperty Name="id_loginhistory" ColumnName="id_loginhistory" />
+          <ScalarProperty Name="id_employees" ColumnName="id_employees" />
+          <ScalarProperty Name="Lastentrance" ColumnName="Lastentrance" />
+          <ScalarProperty Name="Logintype" ColumnName="Logintype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderr">
+      <EntityTypeMapping TypeName="ForestModel.orderr">
+        <MappingFragment StoreEntitySet="orderr">
+          <ScalarProperty Name="id_order" ColumnName="id_order" />
+          <ScalarProperty Name="Thecode" ColumnName="Thecode" />
+          <ScalarProperty Name="DateofCreation" ColumnName="DateofCreation" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Closingdate" ColumnName="Closingdate" />
+          <ScalarProperty Name="Rentaltime" ColumnName="Rentaltime" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="ForestModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="id_service" ColumnName="id_service" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Thecode" ColumnName="Thecode" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicee">
+      <EntityTypeMapping TypeName="ForestModel.Servicee">
+        <MappingFragment StoreEntitySet="Servicee">
+          <ScalarProperty Name="id_services" ColumnName="id_services" />
+          <ScalarProperty Name="id_order" ColumnName="id_order" />
+          <ScalarProperty Name="id_service" ColumnName="id_service" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ForestModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
